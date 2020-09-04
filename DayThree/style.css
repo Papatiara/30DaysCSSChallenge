@@ -1,0 +1,55 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper 
+{
+    width: 100vw;
+    height: 100vh;
+    background: #eaffae;
+    box-sizing: border-box;
+    display: flex;  
+    align-items: center;
+}
+
+.slide2
+{
+    height: 100%;
+    width: 50%;
+    overflow-x: hidden; 
+    z-index: 99;
+    position: absolute;
+    background: #f55757;
+    color: #eaffae;
+    display: flex; 
+    align-items: center;
+    border-right: 2px solid #262626;
+} 
+
+.sliding 
+{
+    font-size: 7em;
+    font-family: "arial black";
+    display: flex; 
+    align-items: center;
+    animation: animate 20s linear infinite; 
+}
+
+.sliding span {
+    margin-left: 20px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(0, -50%);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%);
+    }
+}
