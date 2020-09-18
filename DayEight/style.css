@@ -1,0 +1,59 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: navy;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: lightgray;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+}   
+
+.wrapper div {
+    animation: pose 1.4s linear infinite;
+}
+.wrapper div:nth-child(1) {
+    animation-delay: 0;
+}
+.wrapper div:nth-child(2) {
+    animation-delay: 0.2s;
+    text-shadow: #FC0 1px 0 10px;
+    top: 5%;
+}
+.wrapper div:nth-child(3) {
+    animation-delay: 0.3s;
+    text-shadow: #FC0 1px 0 10px;
+    top: 5%;
+
+
+}
+
+
+
+@keyframes pose {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    45% {
+        opacity: 0.8;
+    }
+    76% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
